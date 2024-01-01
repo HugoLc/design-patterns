@@ -25,3 +25,7 @@
   ```
 
   _We know it’s a Dog, but we can now use the animal reference polymorphically._
+
+- Favor composition over inheritance.
+
+  HAS-A can be better than IS-A
