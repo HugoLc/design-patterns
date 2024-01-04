@@ -9,12 +9,12 @@ export default class CurrentConditionsDisplay implements IDisplay, IObserver {
 
   constructor(weatherData: WeatherData) {
     this.weatherData = weatherData;
-    this.weatherData.registerObserver(this)
+    this.weatherData.registerObserver(this);
   }
 
-  update(temp: number, humidity: number, presure: number) {
-    this.temperature = temp;
-    this.humidity = humidity;
+  update() {
+    this.temperature = this.weatherData.getTemperature();
+    this.humidity = this.weatherData.getHumidity();
     this.display();
   }
   display() {

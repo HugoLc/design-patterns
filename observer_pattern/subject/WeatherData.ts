@@ -16,9 +16,7 @@ export default class WeatherData implements ISubject {
     );
   }
   notifyObservers() {
-    this.observers.forEach((obs) =>
-      obs.update(this.temperature, this.humidity, this.presure)
-    );
+    this.observers.forEach((obs) => obs.update());
   }
 
   measurementsChanged() {
@@ -30,5 +28,15 @@ export default class WeatherData implements ISubject {
     this.humidity = humi;
     this.presure = pres;
     this.measurementsChanged();
+  }
+
+  getTemperature() {
+    return this.temperature;
+  }
+  getHumidity() {
+    return this.humidity;
+  }
+  getPresure() {
+    return this.presure;
   }
 }
