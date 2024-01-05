@@ -33,3 +33,7 @@
 - Strive for loosely coupled designs between objects that interact.
 
   Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
+
+- Classes should be open for extension, but closed for modification.
+
+  Our goal is to allow classes to be _easily extended to incorporate new behavior without modifying existing code_. What do we get if we accomplish this? Designs that are resilient to change and flexible enough to take on new functionality to meet changing requirements.
