@@ -1,8 +1,6 @@
 import Beverage from "./Beverage";
 
 export default class DarkRoast extends Beverage {
-  constructor(readonly description: string) {
-    super();
-  }
-  cost: () => number;
+  readonly description = "Dark Roast coffe"
+  cost= () => 3.00;
 }

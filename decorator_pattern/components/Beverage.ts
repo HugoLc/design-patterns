@@ -3,5 +3,5 @@ export default abstract class Beverage {
   getDescription() {
     return this.description;
   }
-  abstract cost: ()=> number
+  abstract cost(): number;
 }

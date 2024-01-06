@@ -1,8 +1,6 @@
 import Beverage from "./Beverage";
 
 export default class Expresso extends Beverage {
-  constructor(readonly description: string) {
-    super();
-  }
-  cost: () => number;
+  readonly description = "Expresso coffe";
+  cost= () => 1.99;
 }

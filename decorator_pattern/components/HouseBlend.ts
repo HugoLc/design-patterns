@@ -1,8 +1,6 @@
 import Beverage from "./Beverage";
 
 export default class HouseBlend extends Beverage {
-  constructor(readonly description: string) {
-    super();
-  }
-  cost: () => number;
+  readonly description = "House Blend coffe";
+  cost = () => 2.5;
 }
