@@ -3,8 +3,8 @@
 // class to instantiate. Factory Method lets a class defer
 // instantiation to subclasses
 
-import ChicagoPizzaStore from "./normal_factory/pizza_stores/ChicagoPizzaStore";
-import NYPizzaStore from "./normal_factory/pizza_stores/NYPizzaStore";
+import ChicagoPizzaStore from "./abstract_factory/pizza_stores/ChicagoPizzaStore";
+import NYPizzaStore from "./abstract_factory/pizza_stores/NYPizzaStore";
 
 // const pizzaFactory = new SimplePizzaFactory();
 

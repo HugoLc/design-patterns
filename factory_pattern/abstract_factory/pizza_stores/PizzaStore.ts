@@ -1,4 +1,3 @@
-import SimplePizzaFactory from "../NormalPizzaFactory";
 import Pizza from "../pizzas/Pizza";
 
 export default abstract class PizzaStore {
