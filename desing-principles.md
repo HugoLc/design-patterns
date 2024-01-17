@@ -39,6 +39,7 @@
   Our goal is to allow classes to be _easily extended to incorporate new behavior without modifying existing code_. What do we get if we accomplish this? Designs that are resilient to change and flexible enough to take on new functionality to meet changing requirements.
 
 - Depend upon abstractions. Do not depend upon concrete classes. **(Dependency Inversion)**
+
   - **No variable should hold a reference to a concrete class.**
     If you use new, you’ll be holding a reference to a concrete class. Use
     a factory to get around that
@@ -52,3 +53,10 @@
     abstraction to start with. Those methods
     implemented in the base class are meant to
     be shared by all your subclasses
+
+- Principle of Least Knowledge: talk only to your immediate friends.
+
+  It means when you
+  are designing a system, for any object, be careful of the
+  number of classes it interacts with and also how it comes to
+  interact with those classes.
