@@ -60,3 +60,10 @@
   are designing a system, for any object, be careful of the
   number of classes it interacts with and also how it comes to
   interact with those classes.
+
+- The Hollywood Principle: Don’t call us, we’ll call you
+
+  With the Hollywood Principle, we allow low-level components
+  to hook themselves into a system, but the high-level
+  components determine when they are needed, and how. In
+  other words, **the high-level components give the low-level components the “don’t call us, we’ll call you” treatment**.

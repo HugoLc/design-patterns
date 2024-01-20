@@ -8,4 +8,9 @@ export default class Coffee extends CaffeineBeverage {
   addCondiments(): void {
     console.log("Adding sugar and milk");
   }
+
+  //hook overwritten
+  customerWantsCondiments() {
+    return false;
+  }
 }
