@@ -67,3 +67,17 @@
   to hook themselves into a system, but the high-level
   components determine when they are needed, and how. In
   other words, **the high-level components give the low-level components the “don’t call us, we’ll call you” treatment**.
+
+- The Single Responsibility Principle: A class should have only one
+  reason to change.
+
+  Every responsibility of
+  a class is an area of
+  potential change. More
+  than one responsibility
+  means more than one area
+  of change.
+
+  This principle guides us to
+  keep each class to a single
+  responsibility.
