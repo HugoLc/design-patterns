@@ -1,5 +1,5 @@
 export default abstract class MenuComponent {
-  getTitle() {
+  getName() {
     throw new Error("Unsuported Method");
   }
   getDescription() {
@@ -12,7 +12,7 @@ export default abstract class MenuComponent {
     throw new Error("Unsuported Method");
   }
   //
-  print(menuComponent: MenuComponent) {
+  print() {
     throw new Error("Unsuported Method");
   }
   add(menuComponent: MenuComponent) {
