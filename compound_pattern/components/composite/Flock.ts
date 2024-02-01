@@ -1,3 +1,4 @@
+import IObserver from "../interfaces/IObserver";
 import IQuackable from "../interfaces/IQuackable";
 
 export default class Flock implements IQuackable {
@@ -10,4 +11,6 @@ export default class Flock implements IQuackable {
   quack(): void {
     this.quackers.forEach((quacker) => quacker.quack());
   }
+  registerObserver(observer: IObserver): void {}
+  notifyObserver(): void {}
 }
